@@ -53,28 +53,36 @@ main {
     padding: 2px 8px;
 }
 
-.alta {
-	background-color: #ff5968;
+.romantica {
+	background-color: #e646b0;
 }
-.media {
-	background-color: #ffd95f;
+.ficcion {
+	background-color: #7d29eb;
 }
-.baja {
-	background-color: #afd3c3;
+.aventuras {
+	background-color: #2ae691;
+}
+
+.fantasia{
+	background-color: blueviolet;
+}
+
+.autoayuda{
+	background-color:darksalmon;
+}
+
+.biografias{
+	background-color: coral;
 }
 
 .agregar-tarea {
 	margin: 0 auto;
-	background-color: white;
-	padding: 15px;
-	border-radius: 5px;
-	font-size: 16px;
-}
-
-.agregar-tarea:hover {
 	background-color: palevioletred;
 	color: white;
-	cursor: pointer;
+	border: none;
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 16px;
 }
 
 .lista-tareas {
@@ -98,4 +106,21 @@ main {
 .conenedor-tareas li:hover {
 	text-decoration: line-through;
 	cursor: pointer;
+}
+
+.button-add{
+	background-color: palevioletred;
+	color: white;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 10px;
+	border: none;
+}
+
+.book-container{
+	background-color: #2ae691;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 20px;
+	padding: 20px;
 }

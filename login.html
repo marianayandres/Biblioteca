@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <head>
+    <header>
 		<h1>Library</h1>
-	</head>
+	</header>
 
     <a class="registro" href="./registro.html">Registrarme</a>
 
@@ -20,20 +20,24 @@
             <div class="container-login" >
                 <h2 class="title-login" >Iniciar Sesión</h2>
 
-                <input type="Usuary">
-                <input type="Password">
-                <button>Acceder</button>
+                <input id="user" type="Usuary">
+                <input id="password" type="Password">
+
+                <div id="bad-credentials" class="bad-credentials"></div>
+
+                <button id="acceder">Acceder</button>
     
             </div>
        </div>
     </section>
 
     <footer>
+        <p>Andrea Menjura</p>
         <p>Cristina Buitrago</p>
         <p>Brayhan Betancur</p>
-        <p>Andrea Menjura</p>
         <p> &copy; 2024  Universidad de Caldas</p>
     </footer>
-
+    
+    <script src="js/usuarios.js"></script>
 </body>
 </html>

@@ -12,70 +12,67 @@
 	</head>
 
 	<main>
-		<section class="registrar-tarea">
-			<input id="tareaInput" class="texto-tarea" type="text" placeholder="Agrega tu nuevo libro">
-
-            <input id="tareaInput" class="texto-tarea" type="text" placeholder="Agrega el autor de tu libro">
-
-			<div class="dificultad">
-				<p>Dificultad</p>
-
-				<div class="opciones">
-					<div>
-						<input type="radio" name="dificultad" id="alta"><span class="alta">Romántica</span>
-					</div>
-					<div>
-						<input type="radio" name="dificultad" id="media"><span class="media">Ciencia Ficción</span>
-					</div>
-					<div>
-						<input type="radio" name="dificultad" id="baja"><span class="baja">Aventuras</span>
-					</div>
-                    <div>
-						<input type="radio" name="dificultad" id="baja"><span class="baja">Fantasía</span>
-					</div>
-                    <div>
-						<input type="radio" name="dificultad" id="baja"><span class="baja">Autoayuda</span>
-					</div>
-                    <div>
-						<input type="radio" name="dificultad" id="baja"><span class="baja">Biografías</span>
+		<form action="" id="add-book-form">
+			<section class="registrar-tarea">
+				<label for="title">Ingresa el nombre del libro</label>
+				<input id="title" class="texto-tarea" type="text" placeholder="Agrega tu nuevo libro">
+				<label for="author">Ingresa el autor del libro</label>
+				<input id="author" class="texto-tarea" type="text" placeholder="Agrega el autor de tu libro">
+				<label for="aisle">Ingresa la ubicación del libro</label>
+				<input id="aisle" class="texto-tarea" type="text" placeholder="Ubicación del libro">
+	
+				<div class="dificultad">
+					<p>Género</p>
+	
+					<div class="opciones">
+						<div>
+							<input type="radio" name="dificultad" id="romantica" value="Romance" ><span class="romantica">Romance</span>
+						</div>
+						<div>
+							<input type="radio" name="dificultad" id="ficcion" value="Ficción" ><span class="ficcion">Ficción</span>
+						</div>
+						<div>
+							<input type="radio" name="dificultad" id="aventuras" value="Aventuras" ><span class="aventuras">Aventuras</span>
+						</div>
+						<div>
+							<input type="radio" name="dificultad" id="fantasia" value="Fantasía" ><span class="fantasia">Fantasía</span>
+						</div>
+						<div>
+							<input type="radio" name="dificultad" id="autoayuda" value="Autoayuda" ><span class="autoayuda">Autoayuda</span>
+						</div>
+						<div>
+							<input type="radio" name="dificultad" id="biografias" value="Biografías" ><span class="biografias">Biografías</span>
+						</div>
 					</div>
 				</div>
-			</div>
-
-			<div class="fecha-entrega">
-				<p>Fecha de entrega</p>
-				<input id="txtEntrega" type="datetime-local">
-			</div>
-
-			<button id="btn-agregar" class="agregar-tarea">Agregar Tarea</button>
-		</section>
+	
+				<button id="btn-agregar" class="agregar-tarea" type="submit">Agregar Libro</button>
+			</section>
+		</form>
 
 		<section class="conenedor-tareas">
-            <input id="tareaInput" class="texto-tarea" type="text" placeholder="Busca tu libro">
-            <input id="tareaInput" class="texto-tarea" type="text" placeholder="Busca por autor">
-			<ul id="lista" class="lista-tareas"><!-- 
-				<li class="tarea alta">Tarea 1</li>
-				<li class="tarea media">Tarea 2</li>
-				<li class="tarea baja">Tarea 3</li> -->
-			</ul>
+			<label for="">Ingresa el nombre del libro</label>
+            <input id="search-title" class="texto-tarea" type="text" placeholder="Busca tu libro">
+			<label for="">Ingresa el nombre del autor del libro</label>
+            <input id="tareaInput" class="texto-tarea" type="text" placeholder="Buscar por autor">
+			<button id="search-button" class="button-add" >Buscar Libro</button>
+
+			<div id="book-container" class="book-container" ></div>
+
 		</section>
 
-
-    
-
-</section>
 
 	</main>
 
 
     
 	<footer>
+		<p>Andrea Menjura</p>
         <p>Cristina Buitrago</p>
         <p>Brayhan Betancur</p>
-        <p>Andrea Menjura</p>
         <p> &copy; 2024  Universidad de Caldas</p>
 	</footer>
 
-	<script src="./main.js"></script>
+	<script src="./js/app.js"></script>
 </body>
 </html>

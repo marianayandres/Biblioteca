@@ -16,6 +16,12 @@ h2{
     margin-bottom: 15px;
 }
 
+.error{
+    background-color: #e0aeae;
+    border: 2px solid #cb3636;
+}
+
+
 .registro{
     text-decoration: none;
     background-color: #c7fd6c;
@@ -166,4 +172,9 @@ input::placeholder{
 
 main{
     display: flex;
+}
+
+.bad-credentials,
+.ya-existe {
+    color: red;
 }

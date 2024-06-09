@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
+    <title>Registro</title>
 </head>
 <body>
 
@@ -18,33 +18,31 @@
     <main class="main" >
         <div class="container" >
             <a class="enlace" href="./login.html">INICIAR SESIÓN</a>
-            <a class="enlace" href="./cliente.html">SOY CLIENTE</a>
         </div>
     
-        <form class="formulario" >
+        <form class="formulario" id="formularioRegistro">
 
             <h2 class="empleado" >Empleados</h2>
             <div>
-                <input type="text" placeholder="Nombre" id="cedula">
-                <input type="text" placeholder="Apellidos:" id="apellido">
+                <input type="text" placeholder="Nombre:" id="nombre" onblur="ValidateName()">
+                <input type="text" placeholder="Apellidos:" id="apellido" onblur="ValidateLastname()">
             </div>
             <div>
-                <input type="text" placeholder="Cedula" id="nombre">
-                <input type="text" placeholder="Codigo Empleado:">
+                <input type="text" placeholder="Cedula:" id="cedula" onblur="ValidateDocument()">
+                <input type="text" placeholder="Codigo Empleado:" id="codigoEmpleado" onblur="ValidateCode()">
             </div>
             <div>
                 <label for="codigo-empleado">Fecha de Nacimiento:</label>
-                <input type="date" id="fecha-nacimiento">
+                <input type="date" id="fecha-nacimiento" onblur="">
             </div>
             <div>
-                <input type="text" placeholder="Lugar de Nacimiento:">
-            </div>
-            <div>
-                <input type="text" placeholder="País:">
-                <input type="text" placeholder="Departamento">
+                <input type="text" placeholder="Usuario:" id="usuario" onblur="ValidateUsuary()">
+                <input type="text" placeholder="Contraseña:" id="contraseña" onblur="ValidatePassword()">
             </div>
 
-            <button>GUARDAR</button>
+            <div id="ya-existe" class="ya-existe"></div>
+
+            <button id="botonGuardar" >GUARDAR</button>
         </form>
 
 
@@ -52,13 +50,13 @@
 
 
     <footer>
+        <p>Andrea Menjura</p>
         <p>Cristina Buitrago</p>
         <p>Brayhan Betancur</p>
-        <p>Andrea Menjura</p>
         <p> &copy; 2024  Universidad de Caldas</p>
     </footer>
 
-
-
+    <script src="js/registro.js"></script>
+    <script src="js/validaciones.js"></script>
 </body>
 </html>
