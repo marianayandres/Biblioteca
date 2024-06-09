@@ -8,10 +8,17 @@ El código fue realizado en la aplicación Visual Studio Code, al momento de rea
 Para probar la aplicación se puede abrir el archivo index.html en el navegador de su preferencia o usar un servidor local como lo es Go Live de Visual Studio Code
 
 ## Descripción de las funcionalidades:
-Definición de Clases: Se definen dos clases: Book para representar la información de un libro y BookNode para representar un nodo en un árbol binario de búsqueda.
-Insertar Libros: La función insertBook permite insertar un libro en un árbol binario de búsqueda. Cuando insertas un libro, se verifica si ya existe en el árbol y, si no, se guarda en el almacenamiento local.
-Guardar Libros en el Almacenamiento Local: La función saveBookToLocal guarda el libro en el almacenamiento local del navegador web. Antes de guardar, se verifica si el libro ya existe para evitar duplicados.
-Buscar Libros por Título o Autor: La función searchBook busca un libro en el árbol binario de búsqueda por su título. Además, se ha agregado la función searchBookByAuthor para buscar libros por autor. Ambas funciones pueden ser utilizadas para realizar búsquedas independientes por título o autor.
-Interfaz de Usuario: Se han añadido funciones y eventos para interactuar con la interfaz de usuario. Puedes agregar libros utilizando un formulario y buscar libros por título o autor haciendo clic en botones correspondientes.
-Mostrar Información de Libros: La función displayBookInfo muestra la información de los libros encontrados en la interfaz de usuario. Si se encuentra algún libro, se muestra su título, autor, género y ubicación; de lo contrario, se muestra un mensaje de error indicando que el libro no fue encontrado.
++ Definición de Clases: Se definen dos clases: Book para representar la información de un libro y BookNode para representar un nodo en un árbol binario de búsqueda.
+
++ Insertar Libros: La función insertBook permite insertar un libro en un árbol binario de búsqueda. Cuando insertas un libro, se verifica si ya existe en el árbol y, si no, se guarda en el almacenamiento local.
+
++ Guardar Libros en el Almacenamiento Local: La función saveBookToLocal guarda el libro en el almacenamiento local del navegador web. Antes de guardar, se verifica si el libro ya existe para evitar duplicados.
+
++ Buscar Libros por Título: La función searchBook busca un libro en el árbol binario de búsqueda por su título. 
+
++ Interfaz de Usuario: Se han añadido funciones y eventos para interactuar con la interfaz de usuario. Puedes agregar libros utilizando un formulario y buscar libros por título o autor haciendo clic en botones correspondientes.
+
++ Mostrar Información de Libros: La función displayBookInfo muestra la información de los libros encontrados en la interfaz de usuario. Si se encuentra algún libro, se muestra su título, autor, género y ubicación; de lo contrario, se muestra un mensaje de error indicando que el libro no fue encontrado.
+
++ Acceder con credenciales: La aplicación da la posibilidad de tener usuarios registrados para las personas encargadas de la biblioteca, así mismo como poder loggearse con los credenciales registrados, ya que estos se quedan almacenados en el Local Storage
 

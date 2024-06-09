@@ -115,6 +115,7 @@ main {
 	margin-top: 10px;
 	border-radius: 10px;
 	border: none;
+	margin-left: calc(50% - 47px);
 }
 
 .book-container{

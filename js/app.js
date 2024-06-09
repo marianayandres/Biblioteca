@@ -154,28 +154,3 @@ function displayBookInfo(book) {
   }
 }
 
-/* function displayBooksByAuthor(author) {
-  const bookContainer = document.getElementById("book-container");
-
-  // Limpiar contenido anterior
-  bookContainer.innerHTML = "";
-
-  // Filtrar libros por autor
-  const filteredBooks = books.filter(book => book.author === author);
-
-  if (filteredBooks.length > 0) {
-    const bookList = document.createElement("ul");
-
-    filteredBooks.forEach(book => {
-      const bookItem = document.createElement("li");
-      bookItem.textContent = `${book.title}`;
-      bookList.appendChild(bookItem);
-    });
-
-    bookContainer.appendChild(bookList);
-  } else {
-    const errorMessage = document.createElement("p");
-    errorMessage.textContent = `No se encontraron libros del autor ${author}`;
-    bookContainer.appendChild(errorMessage);
-  }
-} */
