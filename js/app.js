@@ -153,4 +153,3 @@ function displayBookInfo(book) {
     bookContainer.appendChild(errorMessage);
   }
 }
-

@@ -22,3 +22,6 @@ Para probar la aplicación se puede abrir el archivo index.html en el navegador 
 
 + Acceder con credenciales: La aplicación da la posibilidad de tener usuarios registrados para las personas encargadas de la biblioteca, así mismo como poder loggearse con los credenciales registrados, ya que estos se quedan almacenados en el Local Storage
 
+## Link video:
+
+https://drive.google.com/drive/u/1/folders/1S7mGujIn4njEczWlDmPqNGIyPn2XzWxq
